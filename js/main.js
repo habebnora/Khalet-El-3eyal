@@ -89,7 +89,7 @@
 
   if (isMobile) {
     // Mobile: Set the link to call
-    link.href = "tel:1234567890";
+    link.href = "tel:(+02) 0102 1619 861";
     link.textContent = "Call Us Now!";
   } else {
     // Desktop: Set the link to another action
