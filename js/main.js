@@ -81,3 +81,18 @@
 
 })(jQuery);
 
+  // Detect device type
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Get the link element
+  const link = document.getElementById("dynamic-link");
+
+  if (isMobile) {
+    // Mobile: Set the link to call
+    link.href = "tel:1234567890";
+    link.textContent = "Call Us Now!";
+  } else {
+    // Desktop: Set the link to another action
+    link.href = "https://wa.me/00201021619861";
+    link.textContent = "Call Us Now!";
+  }
