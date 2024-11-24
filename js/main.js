@@ -96,3 +96,26 @@
     link.href = "https://wa.me/00201021619861";
     link.textContent = "Call Us Now!";
   }
+
+
+  // Function to increment the counters
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  counter.innerText = '0';
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+
+    const increment = target / 200; // سرعة التزايد
+
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment);
+      setTimeout(updateCounter, 10); // وقت التحديث
+    } else {
+      counter.innerText = target; // ضبط الرقم النهائي
+    }
+  };
+
+  updateCounter();
+});

@@ -13,20 +13,36 @@
      opacity: 1;
  }
 /*** Spinner End ***/
+.counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #e6f2ff; /* اختر لون يناسب موقعك */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .counter-box {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color:  #FF4880; /* اختر اللون الرئيسي */
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+  }
+  
+  .counter {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 0;
+  }
 
-/* body {
-    direction: rtl;
-    text-align: right;
-    font-family: 'Arial', sans-serif;
-}
-
-ul, ol {
-    direction: rtl;
-}
-
-table {
-    direction: rtl;
-  } */
    .hed{
 color: #ffffff !important;
    }
