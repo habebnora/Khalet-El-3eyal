@@ -27,6 +27,9 @@ ul, ol {
 table {
     direction: rtl;
   } */
+   .hed{
+color: #ffffff !important;
+   }
   select {
     background-color: white !important;  /* يضمن تعيين الخلفية كأبيض */
     border: 1px solid #007bff;           /* تخصيص الحدود (اختياري) */
