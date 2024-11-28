@@ -140,51 +140,23 @@
                         with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
                         done.</p> -->
                 </div>
-                <!-- <div class="row g-5 mb-5">
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                            <div class="">
-                                <h4>Address</h4>
-                                <p class="mb-2">104 North tower New York, USA</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
-                            <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                            <div class="">
-                                <h4>Mail Us</h4>
-                                <p class="mb-2">info@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="d-flex w-100 border border-primary p-4 rounded bg-white">
-                            <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                            <div class="">
-                                <h4>Telephone</h4>
-                                <p class="mb-2">(+012) 3456 7890 123</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <form id="myForm" action="">
+
+                <form id="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdja45D7Q7HvquW05K2nTZdERpKevs4ERpu8HVD7SHT7DP_XQ/formResponse">
                     <div class="row g-5">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
 
                             <p>personal info</p>
 
                             <input type="text" class="w-100 form-control py-3 mb-2 border-primary"
-                                placeholder="Your Name" name="">
+                                placeholder="Your Name" name="entry.774857142">
                             <input type="text" class="w-100 form-control py-3 mb-2 border-primary" placeholder="phone"
-                                name="">
+                                name="entry.448660481">
                             <p>Birthday</p>
-                            <input type="date" class="w-100 form-control py-3 mb-2 border-primary" name="">
+                            <input type="date" class="w-100 form-control py-3 mb-2 border-primary" name="entry.1339790464">
 
                             <p>Location Info</p>
 
-                            <select class="w-100 form-control py-3 mb-2 border-primary" name="entry.126989534">
+                            <select class="w-100 form-control py-3 mb-2 border-primary" name="entry.1690130288">
                                 <option value="" disabled selected>Select your state</option>
                                 <option value="Egypt">Minya</option>
                                 <!-- <option value="USA">USA</option>
@@ -194,14 +166,14 @@
                             </select>
 
                             <!-- القائمة الأولى -->
-                            <select id="centerSelect" class="w-100 form-control py-3 mb-2 border-primary">
+                            <select id="centerSelect" class="w-100 form-control py-3 mb-2 border-primary" name="entry.1453397676">
                                 <option value="" disabled selected>Select your Center</option>
                                 <option value="El Minya">El Minya</option>
                                 <option value="New Minya">New Minya</option>
                             </select>
 
                             <!-- القائمة الثانية -->
-                            <select id="areaSelect" class="w-100 form-control py-3 mb-2 border-primary">
+                            <select id="areaSelect" class="w-100 form-control py-3 mb-2 border-primary" name="entry.724609133">
                                 <option value="" disabled selected>Select your Area</option>
                             </select>
 
@@ -210,14 +182,11 @@
 
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <p>experience for early childhood education ?</p>
-                            <select class="w-100 form-control py-3 mb-2 border-primary" name="entry.126989534">
+                            <select class="w-100 form-control py-3 mb-2 border-primary" name="entry.1187848339">
                                 <option value="" disabled selected></option>
                                 <option value="Yes">Yes</option>
                                 <option value="NO">NO</option>
-                                <!-- <option value="USA">USA</option>
-                                    <option value="UK">UK</option>
-                                    <option value="Canada">Canada</option>
-                                    <option value="Australia">Australia</option> -->
+                                
                             </select>
 
 
@@ -226,7 +195,7 @@
 
                             <p>Appointment to interview</p>
                             <input type="date" class="w-100 form-control py-3 mb-2 border-primary"
-                                placeholder="start date" name="entry.662224024">
+                                placeholder="start date" name="entry.2082382275">
                         </div>
                         <textarea class="w-100 form-control mb-5 border-primary" rows="8" cols="10" placeholder="Notes"
                             name="entry.1388850211"></textarea>
@@ -382,7 +351,7 @@
             // إذا كانت كل الحقول مكتملة، إرسال البيانات
             const formData = new FormData(form);
 
-            fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSf8h7NrknFMCw0cYGVunxJZFQc38PIKjhz7GBwzuzR0RhGWaA/formResponse', {
+            fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSdja45D7Q7HvquW05K2nTZdERpKevs4ERpu8HVD7SHT7DP_XQ/formResponse', {
                 method: 'POST',
                 body: formData,
                 mode: 'no-cors' // منع مشاكل CORS عند إرسال البيانات إلى Google Forms
