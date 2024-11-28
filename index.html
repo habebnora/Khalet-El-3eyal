@@ -58,9 +58,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="testimonial.html" class="nav-item nav-link">testimonials</a>
-                    <a href="team.html" class="nav-item nav-link">Our Team</a>
-                    <a href="event.html" class="nav-item nav-link">Events</a>
+                    <!-- <a href="testimonial.html" class="nav-item nav-link">Testimonials</a> -->
+                    <!-- <a href="team.html" class="nav-item nav-link">Our Team</a> -->
+                    <!-- <a href="event.html" class="nav-item nav-link">Events</a> -->
                     <a href="order.html" class="nav-item nav-link">Place Order</a>
                     <a href="contact.html" class="nav-item nav-link">Be a Partner</a>
                     <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
@@ -82,13 +82,13 @@
             </div>
         </nav>
     </div>
-    
+
 
     <!-- Navbar End -->
 
 
 
-    <!-- Hero Start --> 
+    <!-- Hero Start -->
 
     <div class="container-fluid py-5 hero-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -96,8 +96,10 @@
                 <div class="col-lg-7 col-md-12">
                     <h1 class="mb-4 text-primary hed" style="font-weight: 800;">We Add happiness To your Life</h1>
                     <h1 class="mb-5 display-1 text-white">The Best Baby Sitters For Your Kids</h1>
-                    <a id="dynamic-link" href="#" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Call Us Now</a>
-                    <a href="order.html" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Make an Appointment</a>
+                    <a id="dynamic-link" href="#" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Call
+                        Us Now</a>
+                    <a href="order.html" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Make an
+                        Appointment</a>
                 </div>
             </div>
         </div>
@@ -106,7 +108,7 @@
     <!-- Hero End -->
 
     <!-- counter start -->
-    <div class="counter-container">
+    <!-- <div class="counter-container">
 
         <div class="counter-box">
           <span class="counter" data-target="250">0</span>
@@ -122,7 +124,7 @@
           <p> sitters </p>
         </div>
 
-      </div>
+      </div> -->
     <!-- counter end -->
 
     <!-- About Start -->
@@ -131,10 +133,24 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="video border">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button id="playVideoBtn" type="button" class="btn btn-play" data-bs-toggle="modal"
+                            data-bs-target="#videoModal">
                             <span></span>
                         </button>
+                    </div>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <video id="videoPlayer" controls style="width: 100%; height: auto;">
+                                    <source src="./img/1128.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
@@ -143,7 +159,7 @@
                         About Us</h4>
                     <!-- <h1 class="text-dark mb-4 display-5">We Are Her For You And Your Children</h1> -->
                     <p class="text-dark mb-4" style="font-size: 20px;">Khalet El Ayal is an Egyptian company founded in
-                        2021 to support mothers in caring for their children with a unique approach that blends
+                        2022 to support mothers in caring for their children with a unique approach that blends
                         professionalism and warmth. We started with a simple idea: providing "in-home babysitting"
                         services to help working mothers save time and ensure their children are well cared for.</p>
                     <p class="text-dark mb-4" style="font-size: 20px;">Our goal is for children to feel as if they are
@@ -268,9 +284,9 @@
         </div>
     </div>
     <!-- Service End -->
-     
+
     <!-- Team Start-->
-    <!-- <div class="container-fluid team py-5">
+    <div class="container-fluid team py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h4
@@ -282,7 +298,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
                         <img src="img/team-1.jpg" class="img-fluid w-100" alt="">
-           
+
                         <div class="team-content text-center py-3">
                             <h4 class="text-primary">Rania Harby</h4>
                             <p class="text-muted mb-2">Working hours 2560</p>
@@ -292,7 +308,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
                         <img src="img/team-2.jpg" class="img-fluid w-100" alt="">
-             
+
                         <div class="team-content text-center py-3">
                             <h4 class="text-primary">Abeer Elsayed</h4>
                             <p class="text-muted mb-2">Working hours 1060</p>
@@ -302,7 +318,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
                         <img src="img/team-3.jpg" class="img-fluid w-100" alt="">
-              
+
                         <div class="team-content text-center py-3">
                             <h4 class="text-primary">gamela syed</h4>
                             <p class="text-muted mb-2">Working hours 1560</p>
@@ -312,7 +328,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
                         <img src="img/team-4.jpg" class="img-fluid w-100" alt="">
-                
+
                         <div class="team-content text-center py-3">
                             <h4 class="text-primary">Zinab Hassan</h4>
                             <p class="text-muted mb-2">Working hours 2820</p>
@@ -321,7 +337,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Team End-->
 
 
@@ -534,7 +550,8 @@
                             class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                             LOCATION</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> Al Minya - Egypt</a>
+                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> Al
+                                Minya - Egypt</a>
                             <a href="" class="text-start rounded-0 text-body mb-4"><i
                                     class="fa fa-phone-alt text-primary me-2"></i> (+02) 0102 1619 861</a>
                             <!-- <a href="" class="text-start rounded-0 text-body mb-4"><i
@@ -642,16 +659,28 @@
     <script src="js/main.js"></script>
     <script>
         window.embeddedChatbotConfig = {
-        chatbotId: "TUYEfjwchVl-KON1K0TG6",
-        domain: "www.chatbase.co"
+            chatbotId: "TUYEfjwchVl-KON1K0TG6",
+            domain: "www.chatbase.co"
         }
-        </script>
-        <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="TUYEfjwchVl-KON1K0TG6"
-        domain="www.chatbase.co"
-        defer>
-        </script>
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="TUYEfjwchVl-KON1K0TG6" domain="www.chatbase.co" defer>
+    </script>
+<script>
+    const playVideoBtn = document.getElementById('playVideoBtn');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoModal = document.getElementById('videoModal');
+
+    // تشغيل الفيديو عند الضغط على الزر
+    playVideoBtn.addEventListener('click', function () {
+        videoPlayer.play();
+    });
+
+    // إيقاف الفيديو عند إغلاق النافذة
+    videoModal.addEventListener('hide.bs.modal', function () {
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+    });
+</script>
 </body>
 
 </html>
